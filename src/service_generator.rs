@@ -267,7 +267,7 @@ impl ServiceGenerator
                         if *service != self.service_name {
                             let scope = service.to_snake_case();
                             full_name = format!("{}::{}", scope, full_name);
-                            self.includes.insert(scope);
+                            self.includes.insert(format!("crate::{}", scope));
                         }
                     }
                     Ok(TypeDef { name: full_name, kind: TypeKind::Enum })
@@ -283,7 +283,7 @@ impl ServiceGenerator
                         if *service != self.service_name {
                             let scope = service.to_snake_case();
                             full_name = format!("{}::{}", scope, full_name);
-                            self.includes.insert(scope);
+                            self.includes.insert(format!("crate::{}", scope));
                         }
                     }
                     Ok(TypeDef { name: full_name, kind: TypeKind::Class })
