@@ -34,6 +34,9 @@ pub fn run<T, U>(services_path: T, output_dir: U) -> Result<()>
             if !file_type.is_file() {
                 continue;
             }
+            if file_name == "KRPC.json" {
+                continue;
+            }
             if !file_name.ends_with(".json") {
                 continue;
             }
