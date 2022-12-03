@@ -1,8 +1,9 @@
 [package]
 name = "krpc_mars_terraformer"
-version = "0.7.1"
-authors = ["drwhomphd", "cahu"]
+version = "0.7.2"
+authors = ["bartslinger", "drwhomphd", "cahu"]
 license = "GPL-3.0"
+edition = "2021"
 
 [dependencies]
 serde_json = "1.0"
