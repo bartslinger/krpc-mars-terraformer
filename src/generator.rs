@@ -6,9 +6,9 @@ use std::io::prelude::*;
 use tera;
 use serde_json as json;
 
-use error::Error;
-use error::Result;
-use service_generator::ServiceGenerator;
+use crate::error::Error;
+use crate::error::Result;
+use crate::service_generator::ServiceGenerator;
 
 pub struct Generator {
     service_file: PathBuf,

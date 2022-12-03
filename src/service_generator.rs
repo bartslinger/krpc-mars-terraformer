@@ -9,8 +9,8 @@ use serde_json as json;
 
 use heck::SnakeCase;
 
-use error::Error;
-use error::Result;
+use crate::error::Error;
+use crate::error::Result;
 
 pub struct ServiceGenerator {
     service_name: String,
